@@ -1,5 +1,8 @@
 #include "employee.h"
 
+
+
+e
 EMPLOYEE* list_of_employees=NULL;
 void printEmployee(EMPLOYEE e){
     printf("Name: %s, ", e.name);
@@ -16,8 +19,6 @@ void printEmployee(EMPLOYEE e){
     } else {
         printf("No Payments..\n");
     }
-
-
 }
 
 
