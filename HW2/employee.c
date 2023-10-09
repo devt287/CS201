@@ -7,14 +7,14 @@ EMPLOYEE* list_of_employees=NULL;
 void printEmployee(EMPLOYEE e){
     printf("Name: %s, ", e.name);
     printf("ID: %d\n", e.id);
-    PAYMENT* temp = e.payments;
+    PAYMENT* temp=e.payments;
     if (temp) {
         printf("------------------------\n"); 
         printf("Date       |Amount\n");
         printf("----       |-----\n"); 
         while (temp) {
             printf("%s |%.6f\n", temp->date, temp->amount); 
-            temp = temp->next;
+            temp=temp->next;
         }
     } else {
         printf("No Payments..\n");
@@ -26,11 +26,11 @@ void printEmployee(EMPLOYEE e){
 void addEmployee(int e_id, char* e_name){
     // Your code here
     EMPLOYEE* new_employee = (EMPLOYEE*)malloc(sizeof(EMPLOYEE));
-    new_employee->id = e_id;
-    new_employee->name = e_name;
-    new_employee->payments = NULL;
-    new_employee->next = list_of_employees;
-    list_of_employees= new_employee;
+    new_employee->id=e_id;
+    new_employee->name=e_name;
+    new_employee->payments=NULL;
+    new_employee->next=list_of_employees;
+    list_of_employees=new_employee;
 }
 
 void printEmployees(){
