@@ -74,7 +74,7 @@ int main(){
     */
     //-----------------------------------------------------
     //testCase -7
-    /*
+    
     addEmployee(123,"alma");
     addPayment(123,"01/02/2020",3000);
     addPayment(123,"10/07/2021",5000);
@@ -85,5 +85,5 @@ int main(){
     deleteEmployee(456,"mike");
     deleteEmployee(123,"alma");
     printEmployees();
-    */
+    
 }
